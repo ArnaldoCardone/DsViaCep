@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DS ViaCep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>DSViaCep</h1>
+            <div class="contact-link">contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section" class="form-container">
+            <div class="card-form">
+                <form name="newAddress">
+                    <div class="form-control">
+                        <label for="cep"></label>
+                        <input type="text" class="form-input" id="cep" name="cep" placeholder="Digite o CEP" />
+                        <div class="error-message">Campo Requerido</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street">Logradouro:</label>
+                        <input type="text" class="form-input" id="street" name="street" placeholder="Logradouro" disabled />
+                    </div>
+                    <div class="error-message">Campo Requerido</div>
+                    <div class="form-control">
+                        <label for="number">Número</label>
+                        <input type="text" class="form-input" id="number" name="number" placeholder="Número" />
+                    </div>
+                    <div class="form-control">
+                        <label for="city">Cidade</label>
+                        <input type="text" class="form-input" id="city" name="city" placeholder="Cidade" disabled />
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-left" type="submit">Salvar</button>
+                        <button class="btn btn-right">Limpar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+        <section id="list-section">
+            <div>
+                <h3>São Paulo</h3>
+                <p>Rua dos Três Irmãos</p>
+                <p>São Paulo</p>
+                <p>111111-111</p>
+            </div>
+            <div>
+                <h3>São Paulo</h3>
+                <p>Rua dos Três Irmãos</p>
+                <p>São Paulo</p>
+                <p>111111-111</p>
+            </div>
+
+        </section>
+    </main>
+
 </body>
+
 </html>
